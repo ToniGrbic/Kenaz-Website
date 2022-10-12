@@ -5,6 +5,7 @@ import './styles/App.scss'
 import Home from './pages/Home'
 import {Route, Routes} from 'react-router-dom'
 import SingleArticle from "./pages/SingleArticle";
+import Category from "./pages/Category";
 function App() {
   
   
