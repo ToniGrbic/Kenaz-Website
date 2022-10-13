@@ -21,7 +21,7 @@ const Header = () => {
           </div>
           <div className="navbar">
               <ul className="navbarLinks">
-                  <li ><div className="highlitedLink"><a>NEWS</a></div></li>
+                  <li className="highlitedLink"><a>NEWS</a></li>
                   <li><a>BUSINESS</a></li>
                   <li><a>SPORTS</a></li>
                   <li><a>LIFE</a></li>

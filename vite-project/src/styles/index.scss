@@ -10,6 +10,10 @@
 }
 $header-color: #252525;
 $purple-color:#4D4382;
+$background-color:#EEEEEE;
+body{
+  background:$background-color;
+}
 a {
   font-weight: 500;
   

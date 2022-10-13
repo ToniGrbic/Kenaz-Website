@@ -1,0 +1,29 @@
+.sliderMain{
+    width: 100%;
+    position: relative;    
+}
+
+.sliderMainText {
+    position: absolute;
+    z-index: 5;
+    bottom: 71px;
+    color: #EEF6FA;
+    text-align: left;
+    width: 588px;
+    margin-left: 30px;
+}
+
+.sliderMainText>p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 0;
+
+}
+
+.sliderMainText>h2 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40.8px;
+    margin: 0;
+}
