@@ -1,0 +1,73 @@
+$header-color: #252525;
+$purple-color: #4D4382;
+
+.navbarLinks {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    color: white;
+}
+
+.kenazHeader {
+    display: flex;
+    align-items: center;
+    color: white;
+
+    img {
+        height: 21px;
+        margin-right: 35px;
+    }
+}
+
+.headerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .headerLinks {
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+
+        li {
+            margin-right: 30px;
+
+        }
+    }
+
+}
+
+.highlitedLink {
+    height: 60px;
+    background-color: #299EC3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+}
+
+.header {
+    height: 50%;
+    width: 100%;
+    background: $header-color;
+    color: white;
+    display: flex;
+
+}
+
+.navbar {
+    background: $purple-color;
+    height: 50%;
+}
+
+.navbar ul,
+.header div {
+    margin: 0 auto;
+    width: 940px;
+}

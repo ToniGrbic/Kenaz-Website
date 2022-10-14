@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../styles/Header.scss'
 const Header = () => {
   return (
       <header>
@@ -7,7 +7,7 @@ const Header = () => {
               <div className="headerContent">
                   <div className="kenazHeader">
                       <img src="/Vector Smart Objecta 1.png" />
-                      <h2>KENAZ</h2>
+                      <h2>Kenaz</h2>
                   </div>
                   <div>
                       <ul className="headerLinks">

@@ -1,0 +1,30 @@
+.carouselItem {
+    display: flex;
+    flex-direction: column;
+    max-width: 260px;
+}
+
+.sliderBtn{
+    background-color: white;
+    width:16px;
+    height:22px;
+    margin-right:10px;
+    margin-left: 10px;
+    padding:0;
+}
+
+.carouselBtnsDiv{
+    position:absolute;
+    top:10%;
+    right:20px;
+}
+
+.carouselItemText{
+    padding-right:10px;
+}
+
+
+
+
+
+

@@ -1,14 +1,15 @@
-import React from "react";
+import React from 'react'
 
-function SamplePrevArrow(props) {
+const MainNextArrow = (props) => {
     const { className, onClick } = props;
     return (
       <div
         className={className}
         onClick={onClick}
       >
-        <img src="/Shape 1 copy 2.png"/>
+        <img src="/Shape 1 copy.png"/>
      </div>
     )
 }
-export default SamplePrevArrow
+
+export default MainNextArrow

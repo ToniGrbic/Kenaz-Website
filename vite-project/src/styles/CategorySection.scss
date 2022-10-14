@@ -1,64 +1,16 @@
-.categoryDiv {
-    position: relative;
-    margin-bottom:17px;
-    h3 {
-        margin-left: 30px;
-    }
-
-    background:white;
-    width:620px;
-    height:325px;
-}
-
-.items {
-    display: flex;
-    gap: 20px;
-    position: relative;
-    padding: 10px 30px 30px 30px;
-}
-
-.item {
-    position: relative;
-    background: white;
-}
 
 .categoryLink {
     position: absolute;
-
     height: 17px;
     right: 32px;
-    top: 12px;
-    color: #3677B5;
-}
-
-.itemText {
-    position: absolute;
-    width: 169px;
-    height: 85px;
-    left: 0px;
-    top: 134px;
-
-    display: flex;
-    flex-direction: column;
-    color: #666666;
-
-    p:nth-child(2) {
-        font-size: 14;
-        font-weight: 700;
-        line-height: 17px;
+    top: 15px;
+    a{
+        color: #3677B5;
     }
-
-    p:nth-child(1) {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-    }
+    text-decoration: underline;
 }
 
-.stripe {
-    position: absolute;
-    width: 13px;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-}
+
+
+
+
