@@ -4,6 +4,8 @@ import Header from '../components/Header'
 import CategorySection from '../components/CategorySection';
 import Banner from '../components/Banner'
 import CategoryCarousel from '../components/CategoryCarousel';
+import ZoomCarousel from '../components/ZoomCarousel';
+
 const Home = () => {
   return (
       <div className="App">
@@ -36,8 +38,9 @@ const Home = () => {
                         color="#A99765"
                       />
                     </div>
-                    <Banner width={920} 
+                    <Banner width={940} 
                             height={120}/>
+                    <ZoomCarousel/>
                 </div>
             </div>
           <footer className="footer">

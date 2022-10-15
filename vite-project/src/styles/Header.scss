@@ -16,7 +16,9 @@ $purple-color: #4D4382;
 .kenazHeader {
     display: flex;
     align-items: center;
+
     color: white;
+    font-family: 'Bitter', 'serif';
 
     img {
         height: 21px;
@@ -24,23 +26,31 @@ $purple-color: #4D4382;
     }
 }
 
+.searchDiv {
+    max-width: 62px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
 .headerContent {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
 
-    .headerLinks {
-        font-size: 14px;
-        display: flex;
-        justify-content: flex-end;
-        gap: 20px;
+.headerLinks {
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
 
-        li {
-            margin-right: 30px;
-
-        }
+    li {
+        margin-left: 20px;
     }
-
 }
 
 .highlitedLink {
@@ -59,15 +69,22 @@ $purple-color: #4D4382;
     color: white;
     display: flex;
 
+    li {
+        font-family: 'Varela Round';
+    }
 }
 
 .navbar {
     background: $purple-color;
     height: 50%;
+
+    li {
+        font-family: 'Bitter';
+    }
 }
 
-.navbar ul,
-.header div {
+.header div,
+.navbar ul {
     margin: 0 auto;
     width: 940px;
 }

@@ -4,6 +4,8 @@ const Header = () => {
   return (
       <header>
           <div className="header">
+            
+
               <div className="headerContent">
                   <div className="kenazHeader">
                       <img src="/Vector Smart Objecta 1.png" />
@@ -14,7 +16,11 @@ const Header = () => {
                           <li><a>Media</a></li>
                           <li><a>Marketing</a></li>
                           <li><a>Contact</a></li>
-                          <li><img src="/search 2.png" /></li>
+                          <li>
+                            <div className="searchDiv">
+                                <img src="/search 2.png" />
+                            </div>
+                          </li>
                       </ul>
                   </div>
               </div>
