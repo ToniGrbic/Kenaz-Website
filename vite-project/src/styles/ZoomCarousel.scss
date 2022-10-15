@@ -1,28 +1,59 @@
 .zoomCarouselContainer{
+    
     width: 100%;
     position: relative;
     margin-bottom: 20px;
     height:400px;
+    overflow: hidden;
 }
 
 .carouselImg {
     position:relative;
     width: 100%;
     height: 400px;
-
+    
     img {
-        display: inline-block;
+        
         width: 100%;
         height: 100%;
         object-fit: cover;
+        background-position: center;
+        background-size: cover;
+    }
+    transition: 500ms;
+    
+}
+.prevBtnContainer, .nextBtnContainer{
+    position:absolute;
+    
+    z-index:100;
+    width:13px;
+    height: 30px;
+    top:124px;
+    padding:10px;
+    &:hover{
+        cursor: pointer;
     }
 }
+
+.prevBtnContainer{
+    background-image: url('/Shape 1 copy 2.png');
+    
+    left:25px;
+}
+
+.nextBtnContainer{
+    background-image: url('/Shape 1 copy.png');
+    right:25px;
+}
+
+
+
+
 
  .zoomCarouselBg {
     background: url('/Layer 38.png');
     background-size: cover;
-
-
     position: absolute;
     z-index: 10;
     bottom: 0;
@@ -31,25 +62,42 @@
     height: 240px;
 } 
 
-.navCarousel{
-         
-    //position:absolute;
-    //width:940px;
-    
-    div{
-        margin:3px;
+.zoomInDiv{
+    background-image: url('/search 1.png');
+    background-size: cover;
+    width: 80px;
+    height:80px;
+    border-radius:50%;
+    position: absolute;
+    top:120px;
+    right:420px;
+    z-index: 50;
+    transition: 300ms;
+    &:hover{
+        cursor: pointer;
+        
     }
 }
 
-.navCarouselImg{
-    //max-width:120px;
+.navCarousel{
+    width: 920px;
     height:120px;
-    margin-left:10px;
-    margin-right: 10px;
+    padding: 10px;
+    display:flex;
+    gap:100px;
+    z-index:20;
+    margin-bottom:40px;
+    margin-left:5px;
+
+}
+
+.navigationImg{
+    width:120px;
+    height:120px;
+    
     img {
-            display: inline-block;
-            width: 120px;
-            height: 100%;
-            object-fit: cover;
-        }
+        width:120px;
+        height: 100%;
+        object-fit: cover;
+    }
 }

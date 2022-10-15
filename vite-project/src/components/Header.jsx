@@ -8,7 +8,9 @@ const Header = () => {
 
               <div className="headerContent">
                   <div className="kenazHeader">
+                    <div className="kenazLogo">
                       <img src="/Vector Smart Objecta 1.png" />
+                    </div>
                       <h2>Kenaz</h2>
                   </div>
                   <div>
@@ -27,12 +29,12 @@ const Header = () => {
           </div>
           <div className="navbar">
               <ul className="navbarLinks">
-                  <li className="highlitedLink"><a>NEWS</a></li>
-                  <li><a>BUSINESS</a></li>
-                  <li><a>SPORTS</a></li>
-                  <li><a>LIFE</a></li>
-                  <li><a>TECH</a></li>
-                  <li><a>TRAVEL</a></li>
+                  <li style={{ borderColor: "#299EC3" }} className="highlitedLink"><a>NEWS</a></li>
+                  <li style={{ borderColor: "#EE6151" }}><a>BUSINESS</a></li>
+                  <li style={{ borderColor: "#84C14F" }}><a>SPORTS</a></li>
+                  <li style={{ borderColor: "#5DCFF3" }}><a>LIFE</a></li>
+                  <li style={{ borderColor: "#FCC44D" }}><a>TECH</a></li>
+                  <li style={{ borderColor: "#A99765" }}><a>TRAVEL</a></li>
               </ul>
           </div>
       </header>
