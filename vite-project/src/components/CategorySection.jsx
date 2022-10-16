@@ -1,17 +1,21 @@
 import React from 'react'
-const textItems = ['For Obama, MLKs shadow looms large ahead of sp', 'NASA releases portrait of a planet waving at Saturn', 'atriotsvv make cuts ... and Tim Tebow survives (so far)']
+
 import { Link } from 'react-router-dom'
 import '../styles/CategorySection.scss'
 
-const CategorySection = ({title, color}) => {
+const CategorySection = ({title, color, textItems}) => {
   return (
     <div className="categoryDiv">
         <div className="stripe" 
              style={{background:`${color}`}}></div>
         <h3>{title}</h3>
-        <p className="categoryLink"><Link to="/category">See All</Link></p>
-        <div className="items">
-              { textItems.map((text,index)=>{
+        <p className="categoryLink">
+          <Link to="/category">See All</Link>
+        </p>
+        
+              { textItems.length <= 3 && 
+                <div className='items'> 
+                {textItems?.map((text,index)=>{
                 return (
                  <div className="item" key={index}>
                     <img src="Layer 59.png"/>
@@ -20,10 +24,24 @@ const CategorySection = ({title, color}) => {
                         <p>{text}</p>
                     </div>
                 </div>   
-                )
-              })}     
+                )}
+               )}
+              </div>}
+
+              { textItems.length > 3 && 
+                <div className="itemsTwoRows">
+                {textItems?.map((text,index)=>{
+                return (
+                 <div className="itemTwoRows" key={index}>
+                    <img src="Layer 56.png" />
+                    <div className="itemText">
+                    <p className="date">August 26, 2013</p>
+                    <p>{text}</p>
+                  </div>
+                </div>)}
+                )}
+               </div>} 
         </div>
-    </div>
   )
 }
 

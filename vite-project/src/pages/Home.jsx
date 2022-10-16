@@ -1,10 +1,14 @@
 import React from 'react'
-import SingleItemCarouselMain from '../components/SingleItemCarouselMain';
+import SingleItemMainCarousel from '../components/SingleItemMainCarousel';
 import Header from '../components/Header'
 import CategorySection from '../components/CategorySection';
 import Banner from '../components/Banner'
-import CategoryCarousel from '../components/CategoryCarousel';
+import TwoItemCategoryCarousel from '../components/TwoItemCategoryCarousel';
+import SingleItemCategoryCarousel from '../components/SingleItemCategoryCarousel'
 import ZoomCarousel from '../components/ZoomCarousel';
+import Footer from '../components/Footer'
+const textItems1 = ['For Obama, MLKs shadow looms large ahead of sp', 'NASA releases portrait of a planet waving at Saturn', 'atriotsvv make cuts ... and Tim Tebow survives (so far)']
+const textItems2 = ['For Obama, MLKs shadow looms large ahead of sp', 'NASA releases portrait of a planet waving at Saturn', 'atriotsvv make cuts ... and Tim Tebow survives (so far)', 'For Obama, MLKs shadow looms large ahead of sp']
 
 const Home = () => {
   return (
@@ -14,39 +18,49 @@ const Home = () => {
                 <div className="mainContent">
                     <Banner width={940} 
                             height={120}/>
-                    <SingleItemCarouselMain />
-                    <CategorySection title="News" color="#3677B5"/>
-                    <CategorySection title="Sport" color="#84C14F"/>
-                    <Banner width={620} 
+                    <SingleItemMainCarousel />
+                    <CategorySection 
+                            title="News" 
+                            color="#3677B5"
+                            textItems={textItems1}/>
+                    <CategorySection 
+                            title="Sport" 
+                            color="#84C14F"
+                            textItems={textItems1}/>
+                    <Banner 
+                            width={620} 
                             height={120}/>
-                    <CategorySection title="Business" color="#EE6151"/>
-                    <Banner width={620} 
+                    <CategorySection 
+                            title="Business" 
+                            color="#EE6151"
+                            textItems={textItems2}/>
+                    <Banner 
+                            width={620} 
                             height={120} />
-                    <CategoryCarousel 
-                        title="News Carousel" 
-                        color="#FCC44D"
-                        slidesToScroll={2}
-                        slidesToShow={2}
+                    <TwoItemCategoryCarousel 
+                            title="News Carousel" 
+                            color="#FCC44D"
+                            textItems={textItems2}
                     />
                     <div className="singleItemCarousel">
-                      <CategoryCarousel
+                      <SingleItemCategoryCarousel
                         title="Editorials"
                         color="#A99765"
+                        textItems={textItems2}
                       />
-                      <CategoryCarousel
+                      <SingleItemCategoryCarousel
                         title="Local News"
                         color="#A99765"
+                        textItems={textItems2}
                       />
                     </div>
                     <Banner width={940} 
                             height={120}/>
                     <ZoomCarousel/>
-                </div>
+                   
+                </div> 
             </div>
-          <footer className="footer">
-
-          </footer>
-
+            <Footer/>
       </div>
   )
 }

@@ -102,6 +102,10 @@ $pTagColor2: #666666;
     }
 }
 
+.itemText{
+  max-width: 170px;
+}
+
 .singleItemCarousel{
   display:flex;
   
@@ -110,11 +114,13 @@ $pTagColor2: #666666;
 
 .items {
   display: flex;
-  gap: 27px;
+  gap: 20px;
   position: relative;
-  padding: 10px 0px 30px 40px;
+  padding: 10px 0px 0px 40px;
   width:auto;
 }
+
+
 
 
 

@@ -6,7 +6,7 @@ import "../styles/SingleItemSliderMain.scss"
 import MainNextArrow from './MainNextArrow';
 import MainPrevArrow from './MainPrevArrow';
 
-const SingleItemCarouselMain = () => {
+const SingleItemMainCarousel = () => {
 
   const settings = {
     dots: false,
@@ -46,4 +46,4 @@ const SingleItemCarouselMain = () => {
   )
 }
 
-export default SingleItemCarouselMain
+export default SingleItemMainCarousel
