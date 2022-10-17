@@ -1,5 +1,7 @@
 import React from 'react'
 import '../styles/Footer.scss'
+import FooterList from '../components/FooterList'
+
 const socials = [{ image: 'Signal.png', color:'#F8BC2E'},
                  { image: 'Facebook.png', color: '#39599F'},
                  { image: 'twitter.png', color: '#45B0E3'},
@@ -9,7 +11,9 @@ const socials = [{ image: 'Signal.png', color:'#F8BC2E'},
                  { image: 'Skype.png', color: '#00C6FF'}]
 const Footer = () => {
   return (
-    <footer className='footer'>
+      <footer className='footer'>
+        <div className="footerWrapper">
+
         <div className='footerStripe'/>
         <div className='footerContent'>
             <div className='footerSection'>
@@ -22,7 +26,7 @@ const Footer = () => {
                     consectetur adipiscing elit. Vivamus leo ante.</p>
                   <div className='socialLinks'>
                   { socials?.map((social,index)=>{
-                        return (
+                      return (
                             <div className="baseSquare" key={index}
                                  style={{background:`${social.color}`}}>
                                 <img src={`${social.image}`} />
@@ -64,19 +68,25 @@ const Footer = () => {
                       <div className='widget'>probo</div>
                       <div className='widget'>assuevverit</div>
                       <div className='widget'>utroquoe</div>
-
                   </div>
               </div>
               <div className='footerSection'>
                   <h3>Featured</h3>
+                  <FooterList/>
               </div>
               <div className='footerSection'>
                   <h3>Random Posts</h3>
+                  <FooterList/>
               </div>
               <div className='footerSection'>
                   <h3>Twitter Feed</h3>
               </div>
         </div>
+     </div>
+     <div className="copywright">
+              <p>© 2013 - Kenaz Template - Proudly made at Plava tvornica Croatia</p>
+              <p>Typography  -  Templates  -  Contact Form  -  404 Page</p>
+     </div>
     </footer>
   )
 }

@@ -17,7 +17,7 @@ const Home = () => {
       <div className="contentWrapper">
         <div className="mainContent">
           <Banner width={940}
-            height={120} />
+                  height={120} />
           <SingleItemMainCarousel />
           <CategorySection
             title="News"
@@ -54,7 +54,8 @@ const Home = () => {
               textItems={textItems2}
             />
           </div>
-          <Banner width={940}
+          <Banner 
+            width={940}
             height={120} />
           <ZoomCarousel />
 

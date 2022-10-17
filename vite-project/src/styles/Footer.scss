@@ -11,15 +11,20 @@ $lighter-grey-color: #CCCCCC;
     width:100%;
     position: relative;
 }
-
+.footerWrapper{
+    border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+}
 .footerContent{
     width:940px;
     margin:0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 170px 360px;
+    grid-template-rows: 170px 440px;
     row-gap: 84px;
-}
+    column-gap: 20px;
+    padding-bottom: 70px;
+    
+}   
 
 .footerSection{
     h3:not(.title){
@@ -37,7 +42,7 @@ $lighter-grey-color: #CCCCCC;
     width:303px;
     min-height:174px;
     margin-top: 70px;
-    margin-bottom: 50px;
+   
 }
 
 .pTagGrey{
@@ -129,4 +134,67 @@ $lighter-grey-color: #CCCCCC;
 
 .highlitedWidget{
     background-color:$purple-bg;
+}
+
+.listContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.listItem{
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    padding-bottom:20px;
+    padding-top: 20px;
+    border-bottom: 1px solid rgba(102, 102, 102,0.2);
+    div{
+        width:214px;
+    }
+}
+
+ 
+div.listItem:nth-child(3){
+    border-bottom: none;
+} 
+
+
+.listItemText{ 
+
+    position:relative;
+    margin-right:20px;
+    width:214px;
+    p{
+        margin:0px 10px 0px 0px;
+    }
+    p:nth-child(1) {
+        font-size: 10px;
+        color: $grey-color;
+    }
+    
+    p:nth-child(2) {
+        font-family: 'Bitter';
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        color: $lighter-grey-color;
+    }
+}
+
+.viewsNum{
+    position:absolute;
+    top:3px;
+    left:190px;
+    color:$grey-color;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 10px;
+}
+
+.copywright{
+    margin:0 auto;
+    max-width:940px;
+    font-size:14px;
+    color:$grey-color;
+    display:flex;
+    justify-content: space-between;
 }
