@@ -12,56 +12,56 @@ const textItems2 = ['For Obama, MLKs shadow looms large ahead of sp', 'NASA rele
 
 const Home = () => {
   return (
-      <div className="App">
-          <Header />
-            <div className="contentWrapper">
-                <div className="mainContent">
-                    <Banner width={940} 
-                            height={120}/>
-                    <SingleItemMainCarousel />
-                    <CategorySection 
-                            title="News" 
-                            color="#3677B5"
-                            textItems={textItems1}/>
-                    <CategorySection 
-                            title="Sport" 
-                            color="#84C14F"
-                            textItems={textItems1}/>
-                    <Banner 
-                            width={620} 
-                            height={120}/>
-                    <CategorySection 
-                            title="Business" 
-                            color="#EE6151"
-                            textItems={textItems2}/>
-                    <Banner 
-                            width={620} 
-                            height={120} />
-                    <TwoItemCategoryCarousel 
-                            title="News Carousel" 
-                            color="#FCC44D"
-                            textItems={textItems2}
-                    />
-                    <div className="singleItemCarousel">
-                      <SingleItemCategoryCarousel
-                        title="Editorials"
-                        color="#A99765"
-                        textItems={textItems2}
-                      />
-                      <SingleItemCategoryCarousel
-                        title="Local News"
-                        color="#A99765"
-                        textItems={textItems2}
-                      />
-                    </div>
-                    <Banner width={940} 
-                            height={120}/>
-                    <ZoomCarousel/>
-                   
-                </div> 
-            </div>
-            <Footer/>
+    <div className="App">
+      <Header />
+      <div className="contentWrapper">
+        <div className="mainContent">
+          <Banner width={940}
+            height={120} />
+          <SingleItemMainCarousel />
+          <CategorySection
+            title="News"
+            color="#3677B5"
+            textItems={textItems1} />
+          <CategorySection
+            title="Sport"
+            color="#84C14F"
+            textItems={textItems1} />
+          <Banner
+            width={620}
+            height={120} />
+          <CategorySection
+            title="Business"
+            color="#EE6151"
+            textItems={textItems2} />
+          <Banner
+            width={620}
+            height={120} />
+          <TwoItemCategoryCarousel
+            title="News Carousel"
+            color="#FCC44D"
+            textItems={textItems2}
+          />
+          <div className="singleItemCarousel">
+            <SingleItemCategoryCarousel
+              title="Editorials"
+              color="#A99765"
+              textItems={textItems2}
+            />
+            <SingleItemCategoryCarousel
+              title="Local News"
+              color="#A99765"
+              textItems={textItems2}
+            />
+          </div>
+          <Banner width={940}
+            height={120} />
+          <ZoomCarousel />
+
+        </div>
       </div>
+      <Footer />
+    </div>
   )
 }
 

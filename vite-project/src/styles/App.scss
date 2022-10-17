@@ -41,18 +41,6 @@ $pTagColor2: #666666;
   top: 0px;
 }
 
-.slick-prev {
-  left: 3% !important;
-}
-.slick-next {
-  right: 3% !important;
-}
-
-.slick-next, .slick-prev{
-  top:187px;
-  z-index:20;
-}
-
 .slick-prev:before, .slick-next:before  {
   content: '' !important;
 }
@@ -108,7 +96,6 @@ $pTagColor2: #666666;
 
 .singleItemCarousel{
   display:flex;
-  
   gap:20px;
 }
 

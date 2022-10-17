@@ -10,7 +10,7 @@ const CategorySection = ({title, color, textItems}) => {
              style={{background:`${color}`}}></div>
         <h3>{title}</h3>
         <p className="categoryLink">
-          <Link to="/category">See All</Link>
+          <Link to={`/${title}`}>See All</Link>
         </p>
         
               { textItems.length <= 3 && 

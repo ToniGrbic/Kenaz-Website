@@ -57,3 +57,17 @@ $text-color: #EEF6FA;
     color: $text-color;
     margin-top: 10px;
 }
+
+.slick-prev {
+    left: 3% !important;
+}
+
+.slick-next {
+    right: 3% !important;
+}
+
+.slick-next,
+.slick-prev {
+    top: 177px;
+    z-index: 20;
+}
