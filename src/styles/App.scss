@@ -1,6 +1,13 @@
 $pTagColor1:#363F48;
 $pTagColor2: #666666;
 
+@mixin ValeraRound{
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
 .contentWrapper{
   width:940px;
   display:flex;
@@ -59,17 +66,26 @@ $pTagColor2: #666666;
     margin:0;
   }
 }
+
+.heading{
+  display:flex;
+  height: 20px;
+  @include ValeraRound()
+}
+
 .comments{
-  display: inline-block;
-  margin-left:20px;
+  display: flex;
+  gap:6px;
+  margin-left:30px;
+  width:120px;
+  img{
+    height:15px;
+    width:15px;
+  }
 }
 
 .date{
-  display:inline-block;
-  font-family: 'Varela Round', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  @include ValeraRound()
 }
 
 .itemText, .carouselItemText {

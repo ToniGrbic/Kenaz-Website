@@ -21,25 +21,30 @@ const SingleItemMainCarousel = () => {
   return (
 
     <div className="sliderMain">
-      <div className="sliderMainText">
-        <p className="date"><span >August 26, 2013</span>
-          <span className="comments"><img src="/comment ico.png" />  22 Comments</span></p>
-        <h2>'Margot' breathlessly reimagines Anne Frank's sister</h2>
-        <button type="button" className="readArticleBtn">Read Article</button>
-      </div>
+     
       
-      <div className="backgroundWrapper"/>
+     
 
       <Slider {...settings}>
-        <div>
-          <img src="Layer 48.png"/>
-        </div>
-        <div>
-          <img src="Layer 48.png" />
-        </div>
-        <div>
-          <img src="Layer 48.png" />
-        </div>
+        
+        {['1','2','3'].map((index)=>{
+          return (
+            <div className="sliderItem" key={index}>
+              <img src="/Layer 31.png" class="backgroundWrapper" />
+              <img src="Layer 48.png"/> 
+              <div className="sliderMainText">
+                <div className="heading">
+                  <div className="date">August 26, 2013</div>
+                  <div className="comments">
+                    <img src="/comment ico.png" /> 22 Comments
+                  </div>
+               </div>
+                <h2>'Margot' breathlessly reimagines Anne Frank's sister</h2>
+                <button type="button" className="readArticleBtn">Read Article</button>
+              </div>
+          </div>
+          )
+        })}
       </Slider>
     </div>
   

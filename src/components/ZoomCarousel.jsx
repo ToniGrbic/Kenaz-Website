@@ -21,7 +21,7 @@ const ZoomCarousel = () => {
 
     const handleNextClick = ()=>{
         setIsZoom(false)
-        slider?.current?.slickNext()
+        slider?.current.slickNext()
         if(currentImgIndex < images.length-1)
             setCurrentImgIndex(prev=>prev+1)
         else    
@@ -30,7 +30,7 @@ const ZoomCarousel = () => {
 
     const handlePrevClick = () => {
         setIsZoom(false)
-        slider?.current?.slickPrev()
+        slider?.current.slickPrev()
         if (currentImgIndex > 0)
             setCurrentImgIndex(prev => prev - 1)
         else
