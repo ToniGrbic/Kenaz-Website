@@ -29,20 +29,18 @@ $lighter-grey-color: #CCCCCC;
 .footerSection{
     h3:not(.title){
         font-family: 'Bitter';  
-        margin-top: 10px;
+        margin-top: 15px;
         font-size: 24px;
     }
     p{
         font-family: 'Bitter';
-        font-style: normal;
-        font-weight: 400;
         font-size: 14px;
         line-height: 20px;
+        margin: 25px 0;
     }
     width:303px;
     min-height:174px;
     margin-top: 70px;
-   
 }
 
 .pTagGrey{
@@ -105,7 +103,6 @@ $lighter-grey-color: #CCCCCC;
     font-size: 16px;
 }
 
-
 .subscribeBtn{
     width:105px;
     height:53px;
@@ -151,16 +148,16 @@ $lighter-grey-color: #CCCCCC;
     div{
         width:214px;
     }
+    img{
+        border: 2px solid white;
+    }
 }
 
- 
 div.listItem:nth-child(3){
     border-bottom: none;
 } 
 
-
 .listItemText{ 
-
     position:relative;
     margin-right:20px;
     width:214px;

@@ -7,6 +7,8 @@ import TwoItemCategoryCarousel from '../components/TwoItemCategoryCarousel';
 import SingleItemCategoryCarousel from '../components/SingleItemCategoryCarousel'
 import ZoomCarousel from '../components/ZoomCarousel';
 import Footer from '../components/Footer'
+import Sidebar from '../components/Sidebar';
+
 const textItems1 = ['For Obama, MLKs shadow looms large ahead of sp', 'NASA releases portrait of a planet waving at Saturn', 'atriotsvv make cuts ... and Tim Tebow survives (so far)']
 const textItems2 = ['For Obama, MLKs shadow looms large ahead of sp', 'NASA releases portrait of a planet waving at Saturn', 'atriotsvv make cuts ... and Tim Tebow survives (so far)', 'For Obama, MLKs shadow looms large ahead of sp']
 
@@ -15,10 +17,12 @@ const Home = () => {
     <div className="App">
       <Header />
       <div className="contentWrapper">
-        <div className="mainContent">
           <Banner width={940}
                   height={120} />
           <SingleItemMainCarousel />
+          <div className="mainContent">
+          <div>
+
           <CategorySection
             title="News"
             color="#3677B5"
@@ -41,25 +45,27 @@ const Home = () => {
             title="News Carousel"
             color="#FCC44D"
             textItems={textItems2}
-          />
+            />
           <div className="singleItemCarousel">
             <SingleItemCategoryCarousel
               title="Editorials"
               color="#A99765"
               textItems={textItems2}
-            />
+              />
             <SingleItemCategoryCarousel
               title="Local News"
               color="#A99765"
               textItems={textItems2}
-            />
+              />
           </div>
-          <Banner 
+      </div>      
+      <Sidebar/>
+      </div>
+      
+      <Banner 
             width={940}
             height={120} />
-          <ZoomCarousel />
-
-        </div>
+      <ZoomCarousel />
       </div>
       <Footer />
     </div>

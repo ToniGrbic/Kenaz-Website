@@ -11,8 +11,13 @@ $pTagColor2: #666666;
 .contentWrapper{
   width:940px;
   display:flex;
-  flex-direction:column;
-  margin: auto;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.mainContent{
+  display: flex;
+  gap:15px;
 }
 
 .categoryDiv {

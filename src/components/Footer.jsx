@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../styles/Footer.scss'
 import FooterList from '../components/FooterList'
 
@@ -10,6 +10,12 @@ const socials = [{ image: 'Signal.png', color:'#F8BC2E'},
                  { image: 'YouTube.png', color: '#E70031'},
                  { image: 'Skype.png', color: '#00C6FF'}]
 const Footer = () => {
+  
+  const [emailInput, setEmailInput] = useState('')
+  const handleSubmit = (e)=>{
+      e.preventDefault()
+      setEmailInput('')
+  }
   return (
       <footer className='footer'>
         <div className="footerWrapper">
@@ -40,11 +46,13 @@ const Footer = () => {
                   <p className='pTagGrey'>
                     Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit. Vivamus leo ante.</p>
-                 <form onSubmit={(e)=>e.preventDefault()}>
+                 <form onSubmit={(e)=>handleSubmit(e)}>
                     <div className='subscribeDiv'>
                         <input type="email" 
                                className="emailInput"
-                               placeholder='Your Email'/>
+                               placeholder='Your Email'
+                               value={emailInput}
+                               onChange={e=>setEmailInput(e.target.value)}/>
                         <button className='subscribeBtn'
                                 type="submit">
                                 Subscribe
