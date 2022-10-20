@@ -1,197 +1,198 @@
 $footer-bg: #252525;
-$purple-bg: #4D4382;
+$purple-bg: #4d4382;
 $grey-color: #666666;
-$light-grey-color:#999999;
+$light-grey-color: #999999;
 $lighter-dark-color: #333333;
-$lighter-grey-color: #CCCCCC;
-.footer{
-    background-color:$footer-bg;
-    color:white;
-    height:100vh;
-    width:100%;
-    position: relative;
+$lighter-grey-color: #cccccc;
+.footer {
+  background-color: $footer-bg;
+  color: white;
+  height: auto;
+  width: 100%;
+  position: relative;
 }
-.footerWrapper{
-    border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+.footerWrapper {
+  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
 }
-.footerContent{
-    width:940px;
-    margin:0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 170px 440px;
-    row-gap: 84px;
-    column-gap: 20px;
-    padding-bottom: 70px;
-    
-}   
-
-.footerSection{
-    h3:not(.title){
-        font-family: 'Bitter';  
-        margin-top: 15px;
-        font-size: 24px;
-    }
-    p{
-        font-family: 'Bitter';
-        font-size: 14px;
-        line-height: 20px;
-        margin: 25px 0;
-    }
-    width:303px;
-    min-height:174px;
-    margin-top: 70px;
+.footerContent {
+  width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(303px, 1fr));
+  grid-template-rows: 170px 440px;
+  row-gap: 84px;
+  column-gap: 20px;
+  padding-bottom: 70px;
 }
 
-.pTagGrey{
-    color:$grey-color;
+.footerSection {
+  h3:not(.title) {
+    font-family: "Bitter";
+    margin-top: 15px;
+    font-size: 24px;
+  }
+  p {
+    font-family: "Bitter";
+    font-size: 14px;
+    line-height: 20px;
+    margin: 25px 0;
+  }
+  //width:303px;
+  min-height: 174px;
+  margin-top: 70px;
 }
 
-.baseSquare{
-    width:38px;
-    height: 38px;
-    z-index:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.pTagGrey {
+  color: $grey-color;
 }
 
-.socialLinks{
-    display:flex;
-    gap:5px;
+.baseSquare {
+  width: 38px;
+  height: 38px;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.titleDiv{
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
+.socialLinks {
+  display: flex;
+  gap: 5px;
 }
 
-.title{
-    margin-left: 20px;
-    color:#45B0E3;
-    font-family: 'Bitter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    margin: 0 0 0 20px;
+.titleDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.footerStripe{
-    width:100%;
-    height:23px;
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    background-color: $purple-bg;
+.title {
+  margin-left: 20px;
+  color: #45b0e3;
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0 0 0 20px;
 }
 
-.subscribeDiv{
-    display:flex;
+.footerStripe {
+  width: 100%;
+  height: 23px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $purple-bg;
 }
 
-.emailInput{
-    width: 193px;
-    height:53px;
-    box-sizing: border-box;
-    padding-left:20px;
-    background-color: $lighter-dark-color;
-    border:none;
-    color:$light-grey-color;
-    font-weight: 400;
-    font-size: 16px;
+.subscribeDiv {
+  display: flex;
 }
 
-.subscribeBtn{
-    width:105px;
-    height:53px;
-    background-color: $purple-bg;
-    color: $lighter-grey-color;
+.emailInput {
+  width: 193px;
+  height: 53px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  background-color: $lighter-dark-color;
+  border: none;
+  color: $light-grey-color;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-.widgetsList{
-    display:flex;
-    gap:5px;
-   flex-wrap: wrap;
+.subscribeBtn {
+  width: 105px;
+  height: 53px;
+  background-color: $purple-bg;
+  color: $lighter-grey-color;
 }
 
-.widget{
-    padding:0px 7px;
-    margin-top: 6px;
-    margin-bottom: -6px;
-    height:24px;
-    background-color: $lighter-dark-color;
-    font-family: 'Varela Round';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    color:$grey-color;
+.widgetsList {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
 }
 
-.highlitedWidget{
-    background-color:$purple-bg;
+.widget {
+  padding: 0px 7px;
+  margin-top: 6px;
+  margin-bottom: -6px;
+  height: 24px;
+  background-color: $lighter-dark-color;
+  font-family: "Varela Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: $grey-color;
 }
 
-.listContainer{
-    display: flex;
-    flex-direction: column;
+.highlitedWidget {
+  background-color: $purple-bg;
 }
 
-.listItem{
-    color:white;
-    display:flex;
-    justify-content: space-between;
-    padding-bottom:20px;
-    padding-top: 20px;
-    border-bottom: 1px solid rgba(102, 102, 102,0.2);
-    div{
-        width:214px;
-    }
-    img{
-        border: 2px solid white;
-    }
+.listContainer {
+  display: flex;
+  flex-direction: column;
 }
 
-div.listItem:nth-child(3){
-    border-bottom: none;
-} 
-
-.listItemText{ 
-    position:relative;
-    margin-right:20px;
-    width:214px;
-    p{
-        margin:0px 10px 0px 0px;
-    }
-    p:nth-child(1) {
-        font-size: 10px;
-        color: $grey-color;
-    }
-    
-    p:nth-child(2) {
-        font-family: 'Bitter';
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 17px;
-        color: $lighter-grey-color;
-    }
+.listItem {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+  div {
+    width: 214px;
+  }
+  img {
+    border: 2px solid white;
+  }
 }
 
-.viewsNum{
-    position:absolute;
-    top:3px;
-    left:190px;
-    color:$grey-color;
-    font-family: 'Varela Round', sans-serif;
+div.listItem:nth-child(3) {
+  border-bottom: none;
+}
+
+.listItemText {
+  position: relative;
+  margin-right: 20px;
+  width: 214px;
+  p {
+    margin: 0px 10px 0px 0px;
+  }
+  p:nth-child(1) {
     font-size: 10px;
+    color: $grey-color;
+  }
+
+  p:nth-child(2) {
+    font-family: "Bitter";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: $lighter-grey-color;
+  }
 }
 
-.copywright{
-    margin:0 auto;
-    max-width:940px;
-    font-size:14px;
-    color:$grey-color;
-    display:flex;
-    justify-content: space-between;
+.viewsNum {
+  position: absolute;
+  top: 3px;
+  left: 190px;
+  color: $grey-color;
+  font-family: "Varela Round", sans-serif;
+  font-size: 10px;
+}
+
+.copywright {
+  margin: 0 auto;
+  max-width: 940px;
+  font-size: 14px;
+  color: $grey-color;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 140px;
+  padding-top: 20px;
 }
