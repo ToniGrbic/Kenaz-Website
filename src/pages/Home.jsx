@@ -4,10 +4,10 @@ import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
 import CategorySection from "../components/CategorySection";
-import SingleItemMainCarousel from "../components/SingleItemMainCarousel";
-import TwoItemCategoryCarousel from "../components/TwoItemCategoryCarousel";
-import SingleItemCategoryCarousel from "../components/SingleItemCategoryCarousel";
-import ZoomCarousel from "../components/ZoomCarousel";
+import SingleItemMainCarousel from "../components/carousels/SingleItemMainCarousel";
+import TwoItemCategoryCarousel from "../components/carousels/TwoItemCategoryCarousel";
+import SingleItemCategoryCarousel from "../components/carousels/SingleItemCategoryCarousel";
+import ZoomCarousel from "../components/carousels/ZoomCarousel";
 
 const textItems1 = ['For Obama, MLKs shadow looms large ahead of sp', 'NASA releases portrait of a planet waving at Saturn', 'atriotsvv make cuts ... and Tim Tebow survives (so far)']
 const textItems2 = ['For Obama, MLKs shadow looms large ahead of sp', 'NASA releases portrait of a planet waving at Saturn', 'atriotsvv make cuts ... and Tim Tebow survives (so far)', 'For Obama, MLKs shadow looms large ahead of sp']
@@ -15,10 +15,8 @@ const textItems2 = ['For Obama, MLKs shadow looms large ahead of sp', 'NASA rele
 const Home = () => {
   return (
     <>
-      <Header />
-      <main id="#main-content">
-        <div className="contentWrapper">
-          <Banner width={940} height={120} />
+        <div>
+          
           <SingleItemMainCarousel />
           <div className="mainContent">
             <div>
@@ -63,8 +61,6 @@ const Home = () => {
           <Banner width={940} height={120} />
           <ZoomCarousel />
         </div>
-      </main>
-      <Footer />
     </>
   );
 };

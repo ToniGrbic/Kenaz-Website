@@ -2,7 +2,7 @@ import React, {useState, useRef} from 'react'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../styles/ZoomCarousel.scss"
+import "../../styles/ZoomCarousel.scss"
 
 const images = ["Layer 36.png", "Layer 37.png", "Layer 39.png", "Layer 40.png", "Layer 41.png", "Layer 42.png","Layer 44.png"]
 
