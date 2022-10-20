@@ -3,7 +3,6 @@ $pTagColor2: #666666;
 
 @mixin ValeraRound{
     font-family: 'Varela Round', sans-serif;
-    font-weight: 400;
     font-size: 12px;
     line-height: 14px;
 }
@@ -23,7 +22,6 @@ $pTagColor2: #666666;
 .categoryDiv {
   box-sizing: border-box;
   position: relative;
-  
   margin-bottom: 17px;
   padding-right: 10px;
   padding-top: 15px;
@@ -37,7 +35,6 @@ $pTagColor2: #666666;
     font-size: 24px;
     line-height: 29px;
   }
-
   background:white;
   max-width:620px;
   min-width: 290px;
@@ -93,7 +90,7 @@ $pTagColor2: #666666;
   @include ValeraRound()
 }
 
-.itemText, .carouselItemText {
+.itemText, .carouselItemText,.itemTextVideo {
     p {
       margin: 3px;
     }
@@ -109,6 +106,19 @@ $pTagColor2: #666666;
       line-height: 17px;
       color: $pTagColor1;
     }
+}
+
+.itemTextVideo{
+  width:303px;
+  height:96px;
+  background-color: white;
+  p:nth-child(1){
+    font-size: 12px;
+  }
+  p{
+    width:270px;
+    margin-left:32px;
+  }
 }
 
 .itemText{

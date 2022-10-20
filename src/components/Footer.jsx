@@ -22,7 +22,7 @@ const Footer = () => {
 
         <div className='footerStripe'/>
         <div className='footerContent'>
-            <div className='footerSection'>
+            <section className='footerSection'>
                 <div className='titleDiv'>
                     <img src="/Vector Smart Objecta 1.png"/>
                     <h3 className='title'>Kenaz</h3>
@@ -40,8 +40,8 @@ const Footer = () => {
                         )
                   })}
                   </div>
-            </div>   
-              <div className='footerSection'>
+            </section>   
+              <section className='footerSection'>
                   <h3>Newsletter</h3>
                   <p className='pTagGrey'>
                     Lorem ipsum dolor sit amet, 
@@ -59,8 +59,8 @@ const Footer = () => {
                         </button>
                     </div>
                  </form>
-              </div>
-              <div className='footerSection'>
+              </section>
+              <section className='footerSection'>
                   <h3>Tags Widget</h3>
                   <div className="widgetsList">
                       <div className='widget'>assueverit</div>
@@ -77,18 +77,18 @@ const Footer = () => {
                       <div className='widget'>assuevverit</div>
                       <div className='widget'>utroquoe</div>
                   </div>
-              </div>
-              <div className='footerSection'>
+              </section>
+              <section className='footerSection'>
                   <h3>Featured</h3>
                   <FooterList/>
-              </div>
-              <div className='footerSection'>
+              </section>
+              <section className='footerSection'>
                   <h3>Random Posts</h3>
                   <FooterList/>
-              </div>
-              <div className='footerSection'>
-                  <h3>Twitter Feed</h3>
-              </div>
+              </section>
+              <section className='footerSection'>
+                  <img src="Twitter Feed.png" alt="Twitter Feed.png"/>
+              </section>
         </div>
      </div>
      <div className="copywright">

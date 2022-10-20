@@ -11,7 +11,9 @@
 $header-color: #252525;
 $purple-color:#4D4382;
 $background-color:#EEEEEE;
-
+html{
+  scroll-behavior: smooth;
+}
 body{
   background:$background-color;
 }
