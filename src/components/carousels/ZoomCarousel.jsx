@@ -11,7 +11,6 @@ const ZoomCarousel = () => {
     const [currentImgIndex, setCurrentImgIndex] = useState(0)
     const slider = useRef(null)
     
-
     const toggleZoom= ()=>{
           setIsZoom((prev) => !prev)
     }
@@ -68,37 +67,39 @@ const ZoomCarousel = () => {
       };
       
     return (
-        <div>
-        <div className="zoomCarouselContainer">
-         <div className="zoomCarouselBg"/>   
-         <div className="zoomInDiv"
-              onClick={toggleZoom}/>
-         
-        <div className='prevBtnContainer'
-             onClick={handlePrevClick}/>
-            
-        
-        <div className='nextBtnContainer'
-             onClick={handleNextClick}/>
-            
-        
-            <Slider {...settings} ref={slider}>
-                 {images.map((image, index)=>{
-                        return (
-                            <div key={image} className="carouselImg">
-                                <img src={image} 
-                                style={(isZoom && currentImgIndex === index)? 
-                                      {transform:'scale(1.3)'}: {}}/>
-                            </div>
-                        )
-                })} 
-               
-            </Slider>
-       
-        </div>         
-     </div>   
+      <div className="zoomCarouselContainer">
+        <div className="zoomCarouselBg" />
+        <div className="zoomInDiv" onClick={toggleZoom} />
 
-    )
+        <div className="prevBtnContainer" onClick={handlePrevClick} />
+
+        <div className="nextBtnContainer" onClick={handleNextClick} />
+
+        {isZoom && (
+          <div className="modal">
+            <div className="close" onClick={toggleZoom}>
+              &times;
+            </div>
+            <div className="modal-content">
+            <img
+              src={images[currentImgIndex]}
+              style={{width:'100%', maxWidth:'1100px', maxHeight:'500px'}}
+            />
+            </div>
+          </div>
+        )}
+
+        <Slider {...settings} ref={slider}>
+          {images.map((image, index) => {
+            return (
+              <div key={image} className="carouselImg">
+                <img src={image} />
+              </div>
+            );
+          })}
+        </Slider>
+      </div>
+    );
 }
 
 export default ZoomCarousel

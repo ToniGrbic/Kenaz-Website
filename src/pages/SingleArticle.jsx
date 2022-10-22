@@ -1,10 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { useParams } from 'react-router-dom'
 import Banner from '../components/Banner'
 import Sidebar from '../components/sections/Sidebar'
 import '../styles/ArticlePageContent.scss'
 
 const SingleArticle = () => {
+  const [formData, setformData] = useState({
+    name: '',
+    email:'',
+    comment:''
+  })
+
+const handleChange = (e)=>{
+  const {name, value} = e.target
+  setformData({...formData, [name]:value})
+}
+
+const handleSubmit = (e)=>{
+    e.preventDefault()
+    setformData({ name: "", email: "", comment: "" });
+}
+
   return (
     <>
       <div className="articlePageImgDiv">
@@ -73,21 +89,36 @@ const SingleArticle = () => {
               suscipit egestas, augue vel suspendisse. Et felis venenatis
               blandit sed est ultrices, adipiscing urna.
             </p>
-            <form className="commentForm">
-              <input type="text" placeholder="Name" className="textInput" />
-              <input type="email" placeholder="Email Addres" className="textInput" />
+            <form className="commentForm" 
+                  onSubmit={(e) => handleSubmit(e)}>
+              <input
+                value={formData.name}
+                onChange={(e)=>handleChange(e)}
+                type="text"
+                name="name"
+                placeholder="Name"
+                className="textInput"
+              />
+              <input
+                value={formData.email}
+                onChange={(e)=>handleChange(e)}
+                type="email"
+                name="email"
+                placeholder="Email Addres"
+                className="textInput"
+              />
 
-              <textarea 
-                     rows="15" 
-                     cols="40"
-                     placeholder="Comment" 
-                     className='textAreaComment'>
-                     
-              </textarea>
-              <button 
-                    type="submit"
-                    className="purpleBtn">
-                      Submit
+              <textarea
+                value={formData.comment}
+                onChange={(e)=>handleChange(e)}
+                name="comment"
+                rows="15"
+                cols="40"
+                placeholder="Comment"
+                className="textAreaComment"
+              />
+              <button type="submit" className="purpleBtn">
+                Submit
               </button>
             </form>
           </section>
