@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Footer from "../components/sections/Footer";
+import Header from "../components/sections/Header";
 import Banner from "../components/Banner";
 const Layout = (props) => {
   return (

@@ -26,6 +26,7 @@ $lighter-grey-color: #cccccc;
 }
 
 .footerSection {
+  background-color: $footer-bg;
   h3:not(.title) {
     font-family: "Bitter";
     margin-top: 15px;
@@ -37,7 +38,7 @@ $lighter-grey-color: #cccccc;
     line-height: 20px;
     margin: 25px 0;
   }
-  //width:303px;
+  
   min-height: 174px;
   margin-top: 70px;
 }

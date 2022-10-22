@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Header.scss";
+import "../../styles/Header.scss";
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
@@ -38,32 +38,32 @@ const Header = () => {
         <ul className="navbarLinks">
           <li className="highlitedLink blueBorder">
             <Link to="/News">
-              <a>NEWS</a>
+              <div>NEWS</div>
             </Link>
           </li>
           <li className="orangeBorder">
             <Link to="/Business">
-              <a>BUSINESS</a>
+              <div>BUSINESS</div>
             </Link>
           </li>
           <li className="greenBorder">
             <Link to="/Sports">
-              <a>SPORTS</a>
+              <div>SPORTS</div>
             </Link>
           </li>
           <li className="lightblueBorder">
             <Link to="/Life">
-              <a>LIFE</a>
+              <div>LIFE</div>
             </Link>
           </li>
           <li className="yellowBorder">
             <Link to="/Tech">
-              <a>TECH</a>
+              <div>TECH</div>
             </Link>
           </li>
           <li className="brownBorder">
             <Link to="/Travel">
-              <a>TRAVEL</a>
+              <div>TRAVEL</div>
             </Link>
           </li>
         </ul>

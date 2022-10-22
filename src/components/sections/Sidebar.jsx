@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/Sidebar.scss";
-import Banner from "../components/Banner"
+import "../../styles/Sidebar.scss";
+import Banner from "../Banner"
 const Sidebar = () => {
   return (
     <div className="sidebarItems">

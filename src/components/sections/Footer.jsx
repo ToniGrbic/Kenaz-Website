@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import '../styles/Footer.scss'
-import FooterList from '../components/FooterList'
+import '../../styles/Footer.scss'
+import FooterList from '../FooterList'
 
 const socials = [{ image: 'Signal.png', color:'#F8BC2E'},
                  { image: 'Facebook.png', color: '#39599F'},

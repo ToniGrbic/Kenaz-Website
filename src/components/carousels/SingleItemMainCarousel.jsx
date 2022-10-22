@@ -3,6 +3,7 @@ import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../styles/SingleItemSliderMain.scss"
+import {Link} from "react-router-dom"
 import MainNextArrow from '../MainNextArrow';
 import MainPrevArrow from '../MainPrevArrow';
 
@@ -22,28 +23,30 @@ const SingleItemMainCarousel = () => {
 
     <div className="sliderMain">
      
-      
-     
-
       <Slider {...settings}>
         
         {['1','2','3'].map((index)=>{
           return (
             <div className="sliderItem" key={index}>
-              <img src="/Layer 31.png" class="backgroundWrapper" />
-              <img src="Layer 48.png"/> 
+              <img src="/Layer 31.png" 
+                   className="backgroundWrapper" />
+              <img src="Layer 48.png" />
               <div className="sliderMainText">
                 <div className="heading">
                   <div className="date">August 26, 2013</div>
                   <div className="comments">
                     <img src="/comment ico.png" /> 22 Comments
                   </div>
-               </div>
+                </div>
                 <h2>'Margot' breathlessly reimagines Anne Frank's sister</h2>
-                <button type="button" className="readArticleBtn">Read Article</button>
+                <button className="readArticleBtn transparentBtn">
+                  <Link to="/articles/1">
+                    Read Article
+                  </Link>
+                </button>
               </div>
-          </div>
-          )
+            </div>
+          );
         })}
       </Slider>
     </div>
