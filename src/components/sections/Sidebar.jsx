@@ -11,16 +11,16 @@ const Sidebar = () => {
           <p>Comments</p>
         </div>
         <div className="itemsListSidebar">
-          {["1", "2", "3", "4", "5"].map((item) => {
+          {["1", "2", "3", "4","5"].map((item,index) => {
             return (
-              <div className="itemContent" key={item}>
+              <div className="itemContent" key={index}>
                 <div className="itemTextSidebar">
                   <p className="date">August 26, 2013</p>
                   <p>Palestinians call off peace talks after clash</p>
                 </div>
                 <img src="/Layer 5.png" />
                 <div className="commentsSidebar">
-                  <img src="comment copy 3.png" />
+                  <img src="/comment copy 3.png" />
                   <div>
                     <p>5</p>
                   </div>
@@ -70,7 +70,7 @@ const Sidebar = () => {
           <img src="/Layer 27.png" />
           <div className="playButton">
             <div className="polygon">
-              <img src="Polygon 1.png" />
+              <img src="/Polygon 1.png" />
             </div>
           </div>
         </div>

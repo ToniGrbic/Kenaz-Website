@@ -19,13 +19,14 @@ $lighter-grey-color: #cccccc;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(303px, 1fr));
-  grid-template-rows: 170px 440px;
+  grid-template-rows: 170px 460px;
   row-gap: 84px;
   column-gap: 20px;
   padding-bottom: 70px;
 }
 
 .footerSection {
+  overflow: hidden;
   background-color: $footer-bg;
   h3:not(.title) {
     font-family: "Bitter";
@@ -129,10 +130,6 @@ $lighter-grey-color: #cccccc;
   color: $grey-color;
 }
 
-.highlitedWidget {
-  background-color: $purple-bg;
-}
-
 .listContainer {
   display: flex;
   flex-direction: column;
@@ -196,4 +193,7 @@ div.listItem:nth-child(3) {
   justify-content: space-between;
   padding-bottom: 140px;
   padding-top: 20px;
+}
+.twitterFeed{
+  margin-top:10px
 }

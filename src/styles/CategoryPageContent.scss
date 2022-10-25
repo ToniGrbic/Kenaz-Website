@@ -2,6 +2,7 @@ $pTagColor2: #666666;
 $pTagColor3: #444444;
 $text-color: #eef6fa;
 $grayColorDiv: #dddddd;
+$purple-color: #4d4382;
 
 .categoryArticles {
   display: flex;
@@ -85,4 +86,9 @@ $grayColorDiv: #dddddd;
   &:hover {
     cursor: pointer;
   }
+}
+
+.pageSelected{
+  background-color: $purple-color;
+  color:white
 }

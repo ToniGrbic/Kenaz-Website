@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState}from "react";
 import { useParams, Link } from "react-router-dom";
 import SingleItemMainCarousel from "../components/carousels/SingleItemMainCarousel";
 import Sidebar from "../components/sections/Sidebar";
@@ -9,6 +9,12 @@ const pagesSelect = Array.from(Array(10).keys());
 
 const Category = () => {
   const { category } = useParams();
+  const [currentPage, setCurrentPage] = useState(1)
+
+  const handleClick = (pageSelect)=>{
+    setCurrentPage(pageSelect +1)
+  }
+
   return (
     <>
       <SingleItemMainCarousel />
@@ -43,7 +49,7 @@ const Category = () => {
                       minim veniam, quis nostrud exerci tation ullamcorper
                       suscipit lobortis nisl ut aliquip ex ea commodo.
                     </p>
-                    <button className="readArticleBtn purpleBtn">
+                    <button className="readArticleBtn purpleBg">
                       <Link to={`/articles/${index}`}>Read Article</Link>
                     </button>
                   </div>
@@ -54,7 +60,11 @@ const Category = () => {
           <div className="pageCountDiv">
             {pagesSelect?.map((pageSelect) => {
               return (
-                <div className="pageSelectDiv" key={pageSelect}>
+                <div className={currentPage === (pageSelect+1)?
+                               `pageSelectDiv pageSelected`
+                               :'pageSelectDiv'}
+                     key={pageSelect}
+                     onClick={()=>handleClick(pageSelect)}>
                   <p>{pageSelect + 1}</p>
                 </div>
               );

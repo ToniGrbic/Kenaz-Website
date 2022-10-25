@@ -21,7 +21,6 @@ p{
   font-family: 'Varela Round';
 }
 a {
-  font-weight: 500;
   text-decoration: inherit;
   color:white;
 }
@@ -48,18 +47,10 @@ header{
   padding: 0;
 }
 
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
 button {
-  border:none;
-  font-size: 1em;
-  font-weight: 500;
-  
-  cursor: pointer;
+ border:none;
+ font-size: 1em;
+ cursor: pointer;
 }
 
 input, button{

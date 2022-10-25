@@ -12,7 +12,6 @@
     height: 400px;
     
     img {
-        
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -20,11 +19,10 @@
         background-size: cover;
     }
     transition: 500ms;
-    
 }
+
 .prevBtnContainer, .nextBtnContainer{
     position:absolute;
-    
     z-index:100;
     width:13px;
     height: 30px;
@@ -37,7 +35,6 @@
 
 .prevBtnContainer{
     background-image: url('/Shape 1 copy 2.png');
-    
     left:25px;
 }
 
@@ -83,7 +80,6 @@
     z-index:20;
     margin-bottom:40px;
     margin-left:5px;
-
 }
 
 .navigationImg{
@@ -99,8 +95,7 @@
 
 .modal {
   position: fixed; 
-  z-index: 200; 
-  padding-top: 200px; 
+  z-index: 200;
   left: 0;
   top: 0;
   width: 100%; 
@@ -112,9 +107,17 @@
 
 .modal-content {
   margin:0 auto;
-  width: 80%;
+  width: 90%;
   max-width: 1000px;
- 
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ img{
+     width:90%;
+     max-width:1000px;
+     max-height:800px;
+ }
 }
 
 .close {

@@ -1,5 +1,6 @@
 $purple-bg: #4d4382;
 $grey-color: #acb3ba;
+$background-color:#EEEEEE;
 
 p {
   margin: 0;
@@ -15,7 +16,10 @@ p {
 
 .purpleDiv {
   background-color: $purple-bg;
-  height: 667px;
+  height: auto;
+  max-height:667px;
+  overflow:auto;
+  padding-bottom:40px;
 }
 
 .options {
@@ -145,11 +149,12 @@ p {
   align-items: center;
 }
 
- .playButton{
+.playButton{
   position:absolute;
  }
+
 .polygon{
-  background: url('Rounded Rectangle 1.png');
+  background: url('/Rounded Rectangle 1.png');
   width:62px;
   height:43px;
   display:flex;
@@ -183,6 +188,10 @@ p {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+}
+
+.social{
+  background:$background-color;
 }
 
 

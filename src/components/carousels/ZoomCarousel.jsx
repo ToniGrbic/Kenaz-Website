@@ -83,7 +83,6 @@ const ZoomCarousel = () => {
             <div className="modal-content">
             <img
               src={images[currentImgIndex]}
-              style={{width:'100%', maxWidth:'1100px', maxHeight:'500px'}}
             />
             </div>
           </div>

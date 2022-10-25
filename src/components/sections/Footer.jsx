@@ -14,7 +14,11 @@ const Footer = () => {
   const [emailInput, setEmailInput] = useState('')
   const handleSubmit = (e)=>{
       e.preventDefault()
-      setEmailInput('')
+      if(emailInput){
+        setEmailInput('')
+        alert("Thank you for subscribing!")
+      }
+        
   }
   return (
       <footer className='footer'>
@@ -35,7 +39,7 @@ const Footer = () => {
                       return (
                             <div className="baseSquare" key={index}
                                  style={{background:`${social.color}`}}>
-                                <img src={`${social.image}`} />
+                                <img src={`/${social.image}`} />
                             </div>   
                         )
                   })}
@@ -70,7 +74,7 @@ const Footer = () => {
                       <div className='widget'>probo</div>
                       <div className='widget'>assuevverit</div>
                       <div className='widget'>titl</div>
-                      <div className='widget highlitedWidget'>assuevverit</div>
+                      <div className='widget purpleBg'>assuevverit</div>
                       <div className='widget'>assuevverit</div>
                       <div className='widget'>utroquoe</div>
                       <div className='widget'>probo</div>
@@ -87,7 +91,9 @@ const Footer = () => {
                   <FooterList/>
               </section>
               <section className='footerSection'>
-                  <img src="Twitter Feed.png" alt="Twitter Feed.png"/>
+                  <img src="/Twitter Feed.png" 
+                       alt="Twitter Feed.png" 
+                       className="twitterFeed"/>
               </section>
         </div>
      </div>

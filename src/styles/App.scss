@@ -1,17 +1,12 @@
 $pTagColor1: #363f48;
 $pTagColor2: #666666;
 $text-color: #eef6fa;
+$purple-color: #4d4382;
 
 @mixin ValeraRound {
   font-family: "Varela Round", sans-serif;
   font-size: 12px;
   line-height: 14px;
-}
-
-.pageLayout {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .contentWrapper {
@@ -38,7 +33,6 @@ $text-color: #eef6fa;
     color: $pTagColor1;
     margin-left: 40px;
     margin-top: 0px;
-    font-weight: 700;
     font-size: 24px;
     line-height: 29px;
   }
@@ -102,7 +96,7 @@ $text-color: #eef6fa;
 .carouselItemText,
 .itemTextVideo {
   p {
-    margin: 3px;
+    margin-top: 6px;
   }
 
   p:nth-child(1) {
@@ -147,16 +141,13 @@ $text-color: #eef6fa;
   width: auto;
 }
 
-.purpleBtn {
-  background-color: #4d4382;
+div.purpleBg, .purpleBg {
+  background:$purple-color;
 }
 
 .readArticleBtn {
-  box-sizing: border-box;
   width: 123px;
   height: 33px;
-  border-radius: 0;
-  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: $text-color;
