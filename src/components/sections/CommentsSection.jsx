@@ -1,7 +1,6 @@
-import React, {useState} from 'react'
-import '../../styles/ArticlePageContent.scss'
+import React, { useState } from "react";
+import "../../styles/ArticlePageContent.scss";
 const CommentsSection = () => {
-
   const [formData, setformData] = useState({
     name: "",
     email: "",
@@ -17,9 +16,8 @@ const CommentsSection = () => {
     e.preventDefault();
     const { name, email, comment } = formData;
     if (name && email && comment) {
-        setformData({ name: "", email: "", comment: "" });
-    } else 
-        alert("fill in all the fields");
+      setformData({ name: "", email: "", comment: "" });
+    } else alert("fill in all the fields");
   };
 
   return (
@@ -66,6 +64,6 @@ const CommentsSection = () => {
       </form>
     </>
   );
-}
+};
 
-export default CommentsSection
+export default CommentsSection;

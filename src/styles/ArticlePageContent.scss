@@ -1,119 +1,117 @@
-
-
-.articlePageImgDiv{
-  height:588px;
-  position:relative;
-
+.articlePageImgDiv {
+  height: 588px;
+  position: relative;
 }
 
-.articlePageTitleDiv{
-  position:absolute;
+.articlePageTitleDiv {
+  position: absolute;
   z-index: 10;
-  width:800px;
-  bottom:35px;
-  left:51px;
-  color:#222222;
-  h1,p{
-    margin:0;
+  width: 800px;
+  bottom: 35px;
+  left: 51px;
+  color: #222222;
+  h1,
+  p {
+    margin: 0;
   }
-  h1{
-    font-size:44px;
+  h1 {
+    font-size: 44px;
     line-height: 53px;
-    font-family: 'Bitter', 'serif';
+    font-family: "Bitter", "serif";
   }
 
-  p{
+  p {
     font-size: 12px;
   }
 }
 
-.wrapperArticleImg{
-  height:258px;
-  z-index:5;
-  position:absolute;
-  bottom:0;
-  left:0;
+.wrapperArticleImg {
+  height: 258px;
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-.articlePageText{
+.articlePageText {
   background-color: white;
-  max-width:620px;
-  height:auto;
-  display:flex;
+  max-width: 620px;
+  height: auto;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom:18px;
-  p{
-    margin-left:30px;
-    margin-right:20px;
-    margin-top:37px;
-    margin-bottom:42px;
+  padding-bottom: 18px;
+  p {
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 37px;
+    margin-bottom: 42px;
     font-size: 14px;
   }
 }
 
-.aboutTheAuthor{
-  padding-bottom:31px;
-  padding-left:31px;
-  padding-right:26px;
-  padding-top:18px;
-  h3{
-    margin:0;
+.aboutTheAuthor {
+  padding-bottom: 31px;
+  padding-left: 31px;
+  padding-right: 26px;
+  padding-top: 18px;
+  h3 {
+    margin: 0;
   }
 }
 
-.authorText{
-  display:flex;
-  gap:20px;
-  margin-top:30px;
-  img{
-    height:128px;
+.authorText {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  img {
+    height: 128px;
   }
-  p{
-    font-size:13px;
+  p {
+    font-size: 13px;
   }
 }
 
-.commentsSection{
-    height:1000px;
-    padding-left:30px;
-    padding-right:20px;
-    padding-bottom:30px;
-    margin-bottom:45px;
-    h3{
-        padding-top:15px;
-    }
-    p{
-        font-size: 13px;
-    }
+.commentsSection {
+  height: 1000px;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 45px;
+  h3 {
+    padding-top: 15px;
+  }
+  p {
+    font-size: 13px;
+  }
 }
 
-.commentForm{
-    margin-top:25px;
-    display:flex;
-    flex-direction: column;
-    gap:15px;
-    input, textarea{
-        background-color:#DDDDDD;
-        border:none;
-        font-family: 'Varela Round';
-        font-size:14px;
-        padding-left:15px;
-    }
-    input{
-        height:43px;
-        width:303px;
-        
-    }
-    textarea{
-        padding-top:15px;
-        max-height:187px;
-        max-width:550px;
-        resize: none;
-    }
-    button[type="submit"]{
-         height:53px;
-         width:153px;
-         color:white;
-    }
+.commentForm {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  input,
+  textarea {
+    background-color: #dddddd;
+    border: none;
+    font-family: "Varela Round";
+    font-size: 14px;
+    padding-left: 15px;
+  }
+  input {
+    height: 43px;
+    width: 303px;
+  }
+  textarea {
+    padding-top: 15px;
+    max-height: 187px;
+    max-width: 550px;
+    resize: none;
+  }
+  button[type="submit"] {
+    height: 53px;
+    width: 153px;
+    color: white;
+  }
 }

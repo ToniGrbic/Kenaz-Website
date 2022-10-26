@@ -19,14 +19,12 @@ $lighter-grey-color: #cccccc;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(303px, 1fr));
-  grid-template-rows: 170px 460px;
-  row-gap: 84px;
+  grid-auto-rows: minmax(min-content, max-content);
   column-gap: 20px;
-  padding-bottom: 70px;
+  padding-bottom:50px;
 }
 
 .footerSection {
-  overflow: hidden;
   background-color: $footer-bg;
   h3:not(.title) {
     font-family: "Bitter";
@@ -39,9 +37,10 @@ $lighter-grey-color: #cccccc;
     line-height: 20px;
     margin: 25px 0;
   }
-  
+
   min-height: 174px;
-  margin-top: 70px;
+  padding-top: 60px;
+  padding-bottom:10px;
 }
 
 .pTagGrey {
@@ -150,7 +149,7 @@ $lighter-grey-color: #cccccc;
   }
 }
 
-div.listItem:nth-child(3) {
+div.listItem:last-child {
   border-bottom: none;
 }
 
@@ -194,6 +193,6 @@ div.listItem:nth-child(3) {
   padding-bottom: 140px;
   padding-top: 20px;
 }
-.twitterFeed{
-  margin-top:10px
+.twitterFeed {
+  margin-top: 10px;
 }
