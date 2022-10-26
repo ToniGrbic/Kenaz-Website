@@ -1,132 +1,154 @@
 $header-color: #252525;
-$purple-color: #4D4382;
+$purple-color: #4d4382;
 $icons-bg-color: rgba(255, 255, 255, 0.05);
 
 .navbarLinks {
-    font-size: 18px;
-    font-weight: 700;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 30px;
-    color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  color: white;
 }
 
 .kenazHeader {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    width: 140px !important;
-    color: white;
-    font-family: 'Bitter', 'serif';
+  width: 140px !important;
+  color: white;
+  font-family: "Bitter", "serif";
 
-    img {
-        height: 21px;
-        margin: 0;
-    }
+  img {
+    height: 21px;
+    margin: 0;
+  }
 
-    h2 {
-        margin-left: 10px;
-    }
-
+  h2 {
+    margin-left: 10px;
+  }
 }
 
 .kenazLogo {
-    max-width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $icons-bg-color;
+  max-width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $icons-bg-color;
 }
 
 .searchDiv {
-    max-width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $icons-bg-color
+  max-width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $icons-bg-color;
 }
 
 .headerContent {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .headerLinks {
-    font-size: 14px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
 
-    li {
-        margin-left: 20px;
+  li {
+    margin-left: 20px;
+  }
+}
+$colors: (
+  blue: #299ec3,
+  orange: #ee6151,
+  green: #84c14f,
+  lightblue: #5dcff3,
+  yellow: #fcc44d,
+  brown: #a99765,
+);
+
+@each $colorname, $color in $colors {
+  .#{$colorname}Border {
+    border-bottom: 4px solid $color;
+    a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scaleY(0);
+      transform-origin: bottom center;
+      z-index: -1;
+      transition: transform 0.3s;
     }
+    a:hover::after {
+      background-color: $color;
+      transform: scaleY(1);
+    }
+  }
 }
 
-.highlitedLink {
-    height: 60px;
-    background-color: #299EC3;
-    border-bottom: 4px solid #299EC3;
-    width: 96px;
+@each $colorname, $color in $colors {
+  .#{$colorname}Bg {
+    background-color: $color;
+  }
 }
 
-.orangeBorder{
-    border-bottom: 4px solid #EE6151; 
-}
-
-.greenBorder{
-    border-bottom: 4px solid #84C14F; 
-}
-
-.lightblueBorder{
-    border-bottom: 4px solid #5DCFF3;
-}
-
-.yellowBorder{
-    border-bottom: 4px solid #FCC44D;
-}
-
-.brownBorder{
-    border-bottom: 4px solid #A99765;
-}
 
 .header {
-    height: 50%;
-    width: 100%;
-    background: $header-color;
-    color: white;
-    display: flex;
+  height: 50%;
+  width: 100%;
+  background: $header-color;
+  color: white;
+  display: flex;
 
-    li {
-        font-family: 'Varela Round';
-    }
+  li {
+    font-family: "Varela Round";
+  }
 }
 
 .navbar {
-    background: $purple-color;
-    height: 50%;
-    
-    li {
-        padding-left: 15px;
-        padding-right: 15px;
-        box-sizing: border-box;
-        margin-right: -30px;
-        font-family: 'Bitter';
-        height: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;   
+  background: $purple-color;
+  height: 50%;
+
+  li {
+    box-sizing: border-box;
+    margin-right: -30px;
+    font-family: "Bitter";
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    a {
+      text-transform: uppercase;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        color: white;
+      }
     }
+
+  }
 }
 
 .header div,
 .navbar ul {
-    margin: 0 auto;
-    width: 940px;
+  margin: 0 auto;
+  width: 940px;
 }

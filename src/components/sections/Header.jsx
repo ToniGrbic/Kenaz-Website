@@ -1,6 +1,14 @@
 import React from "react";
 import "../../styles/Header.scss";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+const navLinks = [
+  { name: "Business", color: "orange" },
+  { name: "Sports", color: "green" },
+  { name: "Life", color: "lightblue" },
+  { name: "Tech", color: "yellow" },
+  { name: "Travel", color: "brown" },
+];
+
 const Header = () => {
   return (
     <header>
@@ -10,7 +18,9 @@ const Header = () => {
             <div className="kenazLogo">
               <img src="/Vector Smart Objecta 1.png" />
             </div>
-            <h2>Kenaz</h2>
+            <h2>
+              <Link to="/">Kenaz</Link>
+            </h2>
           </div>
           <div>
             <nav>
@@ -36,36 +46,29 @@ const Header = () => {
       </div>
       <nav className="navbar">
         <ul className="navbarLinks">
-          <li className="highlitedLink blueBorder">
-            <Link to="/News">
-              <div>NEWS</div>
-            </Link>
+          <li className="blueBorder">
+            <NavLink
+              className={({ isActive }) => (isActive ? "blueBg":null)}
+              to="/"
+              end
+            >
+              Home
+            </NavLink>
           </li>
-          <li className="orangeBorder">
-            <Link to="/Business">
-              <div>BUSINESS</div>
-            </Link>
-          </li>
-          <li className="greenBorder">
-            <Link to="/Sports">
-              <div>SPORTS</div>
-            </Link>
-          </li>
-          <li className="lightblueBorder">
-            <Link to="/Life">
-              <div>LIFE</div>
-            </Link>
-          </li>
-          <li className="yellowBorder">
-            <Link to="/Tech">
-              <div>TECH</div>
-            </Link>
-          </li>
-          <li className="brownBorder">
-            <Link to="/Travel">
-              <div>TRAVEL</div>
-            </Link>
-          </li>
+          {navLinks.map((link) => {
+            return (
+              <li className={`${link.color}Border`}>
+                <NavLink
+                  to={`/${link.name}`}
+                  className={({ isActive }) =>
+                    isActive ? `${link.color}Bg` : null
+                  }
+                >
+                  {link.name}
+                </NavLink>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </header>
