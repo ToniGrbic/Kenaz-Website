@@ -21,6 +21,7 @@ $lighter-grey-color: #cccccc;
   display: flex;
   flex-wrap: wrap;
   column-gap: 20px;
+  row-gap:70px;
   padding-top: 80px;
 }
 
@@ -28,6 +29,8 @@ $lighter-grey-color: #cccccc;
   display: flex;
   flex-direction: column;
   background-color: $footer-bg;
+  width: 300px;
+  min-height: 174px;
   h3:not(.title) {
     font-family: "Bitter";
     margin-top: 15px;
@@ -39,8 +42,7 @@ $lighter-grey-color: #cccccc;
     line-height: 20px;
     margin: 25px 0;
   }
-  width: 300px;
-  min-height: 244px;
+ 
   &:nth-child(2) {
     p {
       margin-top: 5px;

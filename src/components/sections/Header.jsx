@@ -49,7 +49,7 @@ const Header = () => {
         <ul className="navbarLinks">
           {navLinks.map((link) => {
             return (
-              <li className={`${link.color}Border`}>
+              <li className={`${link.color}Border`} key={link.name}>
                 <NavLink
                   to={`/${link.name}`}
                   className={({ isActive }) =>
