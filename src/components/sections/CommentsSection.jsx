@@ -58,7 +58,7 @@ const CommentsSection = () => {
           placeholder="Comment"
           className="textAreaComment"
         />
-        <button type="submit" className="purpleBtn">
+        <button type="submit" className="purpleBg">
           Submit
         </button>
       </form>

@@ -2,8 +2,9 @@ import React from "react";
 import "../../styles/Header.scss";
 import { Link, NavLink } from "react-router-dom";
 const navLinks = [
+  { name: "News", color:"blue"},
   { name: "Business", color: "orange" },
-  { name: "Sports", color: "green" },
+  { name: "Sport", color: "green" },
   { name: "Life", color: "lightblue" },
   { name: "Tech", color: "yellow" },
   { name: "Travel", color: "brown" },
@@ -46,15 +47,6 @@ const Header = () => {
       </div>
       <nav className="navbar">
         <ul className="navbarLinks">
-          <li className="blueBorder">
-            <NavLink
-              className={({ isActive }) => (isActive ? "blueBg":null)}
-              to="/"
-              end
-            >
-              Home
-            </NavLink>
-          </li>
           {navLinks.map((link) => {
             return (
               <li className={`${link.color}Border`}>
