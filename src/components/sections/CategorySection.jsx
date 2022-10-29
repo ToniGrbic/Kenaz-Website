@@ -17,7 +17,7 @@ const CategorySection = ({ title, color, textItems }) => {
           {textItems?.map((text, index) => {
             return (
               <div className="item" key={index}>
-                <img src="Layer 59.png" />
+                <img src="Layer 59.png" alt={`image${index}`} />
                 <div className="itemText">
                   <p className="date">August 26, 2013</p>
                   <p>{text}</p>
@@ -33,7 +33,7 @@ const CategorySection = ({ title, color, textItems }) => {
           {textItems?.map((text, index) => {
             return (
               <div className="itemTwoRows" key={index}>
-                <img src="Layer 56.png" />
+                <img src="Layer 56.png" alt={`image${index}`} />
                 <div className="itemText">
                   <p className="date">August 26, 2013</p>
                   <p>{text}</p>

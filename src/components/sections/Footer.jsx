@@ -28,7 +28,8 @@ const Footer = () => {
         <div className='footerContent'>
             <section className='footerSection'>
                 <div className='titleDiv'>
-                    <img src="/Vector Smart Objecta 1.png"/>
+                    <img src="/Vector Smart Objecta 1.png"
+                         alt="Kenaz"/>
                     <h3 className='title'>Kenaz</h3>
                 </div>
                   <p className='pTagGrey'>
@@ -37,11 +38,14 @@ const Footer = () => {
                   <div className='socialLinks'>
                   { socials?.map((social,index)=>{
                       return (
-                            <div className="baseSquare" key={index}
-                                 style={{background:`${social.color}`}}>
-                                <img src={`/${social.image}`} />
-                            </div>   
-                        )
+                        <div
+                          className="baseSquare"
+                          key={index}
+                          style={{ background: `${social.color}` }}
+                        >
+                          <img src={`/${social.image}`} alt={`image${index}`} />
+                        </div>
+                      );
                   })}
                   </div>
             </section>   

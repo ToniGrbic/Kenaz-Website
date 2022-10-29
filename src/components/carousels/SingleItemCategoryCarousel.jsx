@@ -25,29 +25,29 @@ const SingleItemCategoryCarousel = ({color, title, textItems}) => {
             <Slider {...settings} ref={slider} className="items">
                 {textItems?.map((text, index) => {
                     return (
-                        <div className='carouselItem'
-                             key={index}>
-                            <img src="Layer 50.png"
-                                alt="image"
-
-                            />
-                            <div className="carouselItemText">
-                                <p className="date">August 26, 2013</p>
-                                <p>{text}</p>
-                            </div>
+                      <div className="carouselItem" key={index}>
+                        <img
+                          src="Layer 50.png"
+                          alt={`image${index}`}
+                          loading="lazy"
+                        />
+                        <div className="carouselItemText">
+                          <p className="date">August 26, 2013</p>
+                          <p>{text}</p>
                         </div>
-                    )
+                      </div>
+                    );
                 })}
             </Slider>
 
             <div className="carouselBtnsDiv">
                 <button className="sliderBtn"
                     onClick={() => slider?.current.slickPrev()}>
-                    <img src={'Shape 1 (2).png' } />
+                    <img src={'Shape 1 (2).png' } alt="prev"/>
                 </button>
                 <button className="sliderBtn"
                     onClick={() => slider?.current.slickNext()}>
-                    <img src={'Shape 1 (3).png'} />
+                    <img src={'Shape 1 (3).png'} alt="next"/>
                 </button>
             </div>
 

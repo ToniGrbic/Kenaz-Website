@@ -23,7 +23,7 @@ const CommentsSection = () => {
   return (
     <>
       <h3>Comments</h3>
-      <img src="/Comments.png" />
+      <img src="/Comments.png" alt="comments"/>
       <h3>Add Your Comment</h3>
       <p>
         Molestias ultricies, ante quam urna ut volutpat, egestas dolor dui, nec

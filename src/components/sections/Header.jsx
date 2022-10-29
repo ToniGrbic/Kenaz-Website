@@ -17,7 +17,7 @@ const Header = () => {
         <div className="headerContent">
           <div className="kenazHeader">
             <div className="kenazLogo">
-              <img src="/Vector Smart Objecta 1.png" />
+              <img src="/Vector Smart Objecta 1.png" alt="Kenaz"/>
             </div>
             <h2>
               <Link to="/">Kenaz</Link>
@@ -37,7 +37,7 @@ const Header = () => {
                 </li>
                 <li>
                   <div className="searchDiv">
-                    <img src="/search 2.png" />
+                    <img src="/search 2.png" alt="search"/>
                   </div>
                 </li>
               </ul>

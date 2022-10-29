@@ -11,7 +11,7 @@ const Sidebar = () => {
           <p>Comments</p>
         </div>
         <div className="itemsListSidebar">
-          {["1", "2", "3", "4","5"].map((item,index) => {
+          {["1", "2", "3", "4", "5"].map((item, index) => {
             return (
               <div className="itemContent" key={index}>
                 <div className="itemTextSidebar">
@@ -20,7 +20,7 @@ const Sidebar = () => {
                 </div>
                 <img src="/Layer 5.png" />
                 <div className="commentsSidebar">
-                  <img src="/comment copy 3.png" />
+                  <img src="/comment copy 3.png" alt={`image${index}`} />
                   <div>
                     <p>5</p>
                   </div>
@@ -34,7 +34,7 @@ const Sidebar = () => {
         <h3>Socials</h3>
         <div className="links">
           <div className="linkItem">
-            <img src="/Facebook40x40.png" />
+            <img src="/Facebook40x40.png" alt="facebook" />
             <div className="like">
               <p>Like</p>
             </div>
@@ -43,7 +43,8 @@ const Sidebar = () => {
             </div>
           </div>
           <div className="linkItem">
-            <img src="/Twitter40x40.png" />
+            <img src="/Twitter40x40.png"
+                  alt="twitter" />
             <div className="like">
               <p>Follow</p>
             </div>
@@ -52,7 +53,8 @@ const Sidebar = () => {
             </div>
           </div>
           <div className="linkItem">
-            <img src="/Youtube40x40.png" />
+            <img src="/Youtube40x40.png"
+                  alt="Youtube" />
             <div className="like">
               <p>Subscribe</p>
             </div>
@@ -67,10 +69,11 @@ const Sidebar = () => {
           <h3>KenazTV</h3>
         </div>
         <div className="videoDiv">
-          <img src="/Layer 27.png" />
+          <img src="/Layer 27.png" 
+                alt="Video"/>
           <div className="playButton">
             <div className="polygon">
-              <img src="/Polygon 1.png" />
+              <img src="/Polygon 1.png" alt="polygon"/>
             </div>
           </div>
         </div>
@@ -86,7 +89,7 @@ const Sidebar = () => {
         </div>
       </section>
       <section className="socialMediaSection">
-          <img src="/Layer 34.png"/>
+        <img src="/Layer 34.png" alt="social"/>
       </section>
     </div>
   );
