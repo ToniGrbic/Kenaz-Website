@@ -1,19 +1,24 @@
 import "./styles/App.scss";
-import Home from "./pages/Home";
-import { Route, Routes} from "react-router-dom";
-import SingleArticle from "./pages/SingleArticle";
-import Category from "./pages/Category";
+import { Route, Routes, BrowserRouter} from "react-router-dom";
+import React, { Suspense } from 'react'
 import Layout from "./components/Layout";
+const Home = React.lazy(()=>import("./pages/Home"));
+const SingleArticle = React.lazy(()=>import("./pages/SingleArticle"));
+const Category = React.lazy(()=>import("./pages/Category"));
 
 function App() {
   return (
-    <Layout>
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/:category" element={<Category />} />
-        <Route path="/articles/:id" element={<SingleArticle />} />
-      </Routes>
-    </Layout>
+    <Suspense fallback={<div className="loadingPage"><span className="loader"/></div>}>
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/:category" element={<Category />} />
+            <Route path="/articles/:id" element={<SingleArticle />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
+    </Suspense>
   );
 }
 
