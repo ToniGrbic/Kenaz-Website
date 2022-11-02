@@ -28,6 +28,7 @@ const SingleItemMainCarousel = () => {
                 src="/Layer 31.png"
                 className="backgroundWrapper"
                 alt="wrapper"
+                loading="eager"
               />
               <img src="Layer 48.png" alt={`image${index}`} />
               <div className="sliderMainText">

@@ -1,6 +1,14 @@
 $header-color: #252525;
 $purple-color: #4d4382;
 $icons-bg-color: rgba(255, 255, 255, 0.05);
+$colors: (
+  blue: #299ec3,
+  orange: #ee6151,
+  green: #84c14f,
+  lightblue: #5dcff3,
+  yellow: #fcc44d,
+  brown: #a99765,
+);
 
 .navbarLinks {
   font-size: 18px;
@@ -67,14 +75,6 @@ $icons-bg-color: rgba(255, 255, 255, 0.05);
     margin-left: 20px;
   }
 }
-$colors: (
-  blue: #299ec3,
-  orange: #ee6151,
-  green: #84c14f,
-  lightblue: #5dcff3,
-  yellow: #fcc44d,
-  brown: #a99765,
-);
 
 @each $colorname, $color in $colors {
   .#{$colorname}Border {
@@ -104,7 +104,6 @@ $colors: (
   }
 }
 
-
 .header {
   height: 50%;
   width: 100%;
@@ -127,23 +126,19 @@ $colors: (
     font-family: "Bitter";
     height: 60px;
     display: flex;
-    justify-content: center;
+
     a {
       text-transform: uppercase;
       padding-left: 15px;
       padding-right: 15px;
       position: relative;
       z-index: 1;
-      height: 100%;
-      width: 100%;
       display: flex;
-      justify-content: center;
       align-items: center;
       &:hover {
         color: white;
       }
     }
-
   }
 }
 

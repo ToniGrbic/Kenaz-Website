@@ -26,9 +26,10 @@ const TwoItemCategoryCarousel = ({ title, color, textItems }) => {
                         return (
                           <div className="carouselItem" key={index}>
                             <img
+                              loading="lazy"
                               src="Layer 52.png"
                               alt={`image${index}`}
-                              loading="lazy"
+                              
                             />
                             <div className="carouselItemText">
                               <p className="date">August 26, 2013</p>

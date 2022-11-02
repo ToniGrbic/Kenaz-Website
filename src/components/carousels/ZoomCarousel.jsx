@@ -65,7 +65,7 @@ const ZoomCarousel = () => {
     ),
     customPaging: (i) => (
       <div key={i} className="navigationImg">
-        <img src={images[i]} onClick={() => saveIndex(i)} />
+        <img loading="lazy" src={images[i]} onClick={() => saveIndex(i)} />
       </div>
     ),
   };
@@ -94,7 +94,7 @@ const ZoomCarousel = () => {
         {images.map((image, index) => {
           return (
             <div key={image} className="carouselImg">
-              <img src={image} loading="lazy" alt={`image${index}`} />
+              <img loading="lazy" src={image} alt={`image${index}`} />
             </div>
           );
         })}

@@ -43,7 +43,7 @@ const Footer = () => {
                           key={index}
                           style={{ background: `${social.color}` }}
                         >
-                          <img src={`/${social.image}`} alt={`image${index}`} />
+                          <img loading="lazy" src={`/${social.image}`} alt={`image${index}`} />
                         </div>
                       );
                   })}

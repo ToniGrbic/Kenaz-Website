@@ -12,12 +12,12 @@ const CategorySection = ({ title, color, textItems }) => {
         <Link to={`/${title}`}>See All</Link>
       </p>
 
-      {textItems.length <= 3 && (
+      {textItems.length <= 3 ? (
         <div className="items">
           {textItems?.map((text, index) => {
             return (
               <div className="item" key={index}>
-                <img src="Layer 59.png" alt={`image${index}`} />
+                <img loading="lazy" src="Layer 59.png" alt={`image${index}`} />
                 <div className="itemText">
                   <p className="date">August 26, 2013</p>
                   <p>{text}</p>
@@ -26,14 +26,12 @@ const CategorySection = ({ title, color, textItems }) => {
             );
           })}
         </div>
-      )}
-
-      {textItems.length > 3 && (
+      ):(
         <div className="itemsTwoRows">
           {textItems?.map((text, index) => {
             return (
               <div className="itemTwoRows" key={index}>
-                <img src="Layer 56.png" alt={`image${index}`} />
+                <img loading="lazy" src="Layer 56.png" alt={`image${index}`}  />
                 <div className="itemText">
                   <p className="date">August 26, 2013</p>
                   <p>{text}</p>
@@ -44,6 +42,7 @@ const CategorySection = ({ title, color, textItems }) => {
         </div>
       )}
     </div>
+
   );
 };
 

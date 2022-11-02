@@ -15,9 +15,10 @@ const FooterList = () => {
                         peace talks after clash</p>
                         <div className="viewsNum">5</div>
                     </div>
-                    <img src="/Layer 63.png"
+                    <img loading="lazy"
+                         src="/Layer 63.png"
                          alt={`image${index}`}
-                         loading="lazy" />
+                         />
                 </div>
             )
         })}
